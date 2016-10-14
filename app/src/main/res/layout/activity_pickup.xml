@@ -1,0 +1,70 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ganna.uberdriver.ui.PickUpScreen" >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_layout"
+        android:layout_centerInParent="true">
+        <ProgressBar
+            android:id="@+id/progressBar_gray"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="250dp"
+            android:layout_height="273dp"
+            android:layout_centerInParent="true"
+            android:indeterminate="false"
+            android:max="48"
+            android:progress="45"
+            android:progressDrawable="@drawable/progress_bar_gray" />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="250dp"
+            android:layout_height="273dp"
+            android:layout_centerInParent="true"
+            android:indeterminate="false"
+            android:max="48"
+            android:progress="45"
+            android:progressDrawable="@drawable/progress_bar" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress_layout"
+        android:orientation="vertical"
+        android:id="@+id/pickup_info_layout">
+        <TextView
+            android:id="@+id/elapsed_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progressBar"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+        <TextView
+            android:id="@+id/pickup_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textAppearance="?android:textAppearanceMedium"/>
+    </LinearLayout>
+</RelativeLayout>
+

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Uber driver</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="direction_api_key" translatable="false">AIzaSyBUIgTR22QO0MJ5ycirbnqGz3DruM6ntY8</string>
+    <string name="title_activity_en_root_screen">EnRootScreen</string>
+    <string name="title_activity_pick_up_screen">PickUpScreen</string>
+</resources>
